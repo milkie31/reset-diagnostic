@@ -636,7 +636,9 @@ function ResultsScreen({ scores }) {
 
           <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
             <a
-              href="mailto:hello@lydiapark.phd?subject=90-Day%20Reset%20Application"
+              href="https://kingdom-minded-phd.lovable.app"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 display: "block", padding: "15px", borderRadius: 999,
                 background: `linear-gradient(135deg, ${T.gold}, #E8C060)`,
