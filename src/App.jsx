@@ -623,46 +623,51 @@ function ResultsScreen({ scores }) {
           background: T.navy, borderRadius: 24, padding: "32px 28px",
           textAlign: "center",
         }}>
-          <p style={{ fontSize: 11, letterSpacing: "0.2em", color: T.gold, ...sans, marginBottom: 14, textTransform: "uppercase" }}>
-            Ready to Fix Your System?
-          </p>
-          <h2 style={{ ...serif, color: T.cream, fontSize: 28, fontWeight: 400, lineHeight: 1.3, marginBottom: 12 }}>
-            Kingdom-Minded PhD:
-            <br /><em style={{ color: T.gold }}>The 90-Day Reset</em>
+          <h2 style={{ ...serif, color: T.cream, fontSize: 26, fontWeight: 400, lineHeight: 1.3, marginBottom: 20 }}>
+            You’ve Identified What’s Keeping Your Research Stuck.
+            <br /><em style={{ color: T.gold }}>Now Let’s Go Deeper.</em>
           </h2>
-          <p style={{ ...sans, color: "rgba(255,255,255,0.6)", fontSize: 13, lineHeight: 1.7, marginBottom: 24 }}>
-            A 90-day clarity and execution system built around exactly these 5 pillars — designed for STEM PhD students in years 2–5 who are ready to stop spinning their wheels.
-          </p>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-            <a
-              href="https://kingdom-minded-phd.lovable.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "block", padding: "15px", borderRadius: 999,
-                background: `linear-gradient(135deg, ${T.gold}, #E8C060)`,
-                color: T.navy, textDecoration: "none",
-                fontSize: 14, fontWeight: 700, ...sans,
-                letterSpacing: "0.02em",
-              }}
-            >
-              Apply for the 90-Day Reset →
-            </a>
-            <a
-              href="https://www.instagram.com/lydiapark.phd"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "block", padding: "13px", borderRadius: 999,
-                border: `1.5px solid rgba(255,255,255,0.3)`,
-                color: "rgba(255,255,255,0.8)", textDecoration: "none",
-                fontSize: 13, ...sans,
-              }}
-            >
-              DM me "RESET" on Instagram
-            </a>
+          <div style={{ textAlign: "left", marginBottom: 28 }}>
+            {[
+              "Identifying your research bottleneck is an important first step.",
+              "But your research strategy is only part of the equation.",
+              "How do you respond when the next experiment fails? When your advisor questions your approach? When you feel behind, inadequate, or afraid that your PhD isn’t going anywhere?",
+            ].map((text) => (
+              <p key={text} style={{ ...sans, color: "rgba(255,255,255,0.7)", fontSize: 14, lineHeight: 1.7, margin: "0 0 14px" }}>
+                {text}
+              </p>
+            ))}
+            <p style={{ ...sans, color: T.cream, fontSize: 14, fontWeight: 600, lineHeight: 1.7, margin: "0 0 14px" }}>
+              The beliefs you carry into those moments shape how you respond.
+            </p>
+            {[
+              "That’s why I created The Kingdom PhD OS—a 7-week community mastermind for Christian PhD students who want to stop living from fear, insecurity, and endless striving.",
+              "Through God’s Word, live teaching, guided reflection, and community, we’ll work on renewing the way you think, respond to setbacks, steward your gifts, and pursue the vision God has placed in your heart.",
+            ].map((text) => (
+              <p key={text} style={{ ...sans, color: "rgba(255,255,255,0.7)", fontSize: 14, lineHeight: 1.7, margin: "0 0 14px" }}>
+                {text}
+              </p>
+            ))}
+            <p style={{ ...sans, color: T.cream, fontSize: 14, fontWeight: 600, lineHeight: 1.7, margin: 0 }}>
+              You don’t just need a better system for managing your PhD. You need to become the person who can lead your research with confidence, wisdom, faith, and peace.
+            </p>
           </div>
+
+          <a
+            href="https://kingdom-phd-scientist.app/mastermind"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "block", padding: "15px", borderRadius: 999,
+              background: `linear-gradient(135deg, ${T.gold}, #E8C060)`,
+              color: T.navy, textDecoration: "none",
+              fontSize: 14, fontWeight: 700, ...sans,
+              letterSpacing: "0.02em",
+            }}
+          >
+            Explore The Kingdom PhD OS Community →
+          </a>
 
           <p style={{ ...sans, fontSize: 11, color: "rgba(255,255,255,0.3)", marginTop: 16 }}>
             @lydiapark.phd · Stay strategic. Stay rooted.
